@@ -1,6 +1,5 @@
 package org.rbrtwlz.edgedetection.filters;
 
-
 import org.rbrtwlz.edgedetection.ImageArray;
 
 public class BinaryThresholdFilter implements Filter{

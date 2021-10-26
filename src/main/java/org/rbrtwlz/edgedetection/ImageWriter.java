@@ -4,7 +4,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.imageio.ImageIO;
 
-
 public class ImageWriter {
 
   public static void writeImage(String imagePath, ImageArray imgArray, String formatString){

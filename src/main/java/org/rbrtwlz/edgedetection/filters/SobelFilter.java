@@ -4,8 +4,8 @@ import org.rbrtwlz.edgedetection.ImageArray;
 
 public class SobelFilter extends SlidingWindowFilter{
 
-  private int[][] kx = {{1,0,-1}, {2,0,-2}, {1,0,-1}};
-  private int[][] ky = {{1,2,1}, {0,0,0}, {-1,-2,-1}};
+  private final int[][] kx = {{1,0,-1}, {2,0,-2}, {1,0,-1}};
+  private final int[][] ky = {{1,2,1}, {0,0,0}, {-1,-2,-1}};
   private Kernel kernelX = new Kernel(kx);
   private Kernel kernelY = new Kernel(ky);
 
@@ -15,22 +15,22 @@ public class SobelFilter extends SlidingWindowFilter{
     int[][][] gx = super.applyKernel(imageArray.getPixelArray(), this.kernelX);
     int[][][] gy = super.applyKernel(imageArray.getPixelArray(), this.kernelY);
 
-    int w_res = gx[0][0].length;
-    int h_res = gx[0].length;
-    int c_res = gx.length;
+    int wRes = gx[0][0].length;
+    int hRes = gx[0].length;
+    int cRes = gx.length;
 
-    int[][][] res = new int[c_res][h_res][w_res];
+    int[][][] res = new int[cRes][hRes][wRes];
 
-    for(int h=0; h<h_res; h++){
-      for(int w=0; w<w_res; w++){
-        int gray_x = 0;
-        int gray_y = 0;
-        for(int c=0; c<c_res; c++){
-          gray_x += gx[c][h][w];
-          gray_y += gy[c][h][w];
+    for(int h=0; h<hRes; h++){
+      for(int w=0; w<wRes; w++){
+        int grayX = 0;
+        int grayY = 0;
+        for(int c=0; c<cRes; c++){
+          grayX += gx[c][h][w];
+          grayY += gy[c][h][w];
         }
-        int gray = (int) Math.sqrt((gray_x*gray_x) / 9 + (gray_y*gray_y) / 9);
-        for(int c=0; c<c_res; c++){
+        int gray = (int) Math.sqrt((grayX*grayX) / 9 + (grayY*grayY) / 9);
+        for(int c=0; c<cRes; c++){
           res[c][h][w] = gray;
         }
       }

@@ -5,7 +5,6 @@ import java.io.File;
 import java.net.URL;
 import javax.imageio.ImageIO;
 
-
 public class ImageReader {
 
   public static ImageArray readImage(String imagePath){

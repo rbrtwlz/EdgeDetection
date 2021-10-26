@@ -4,7 +4,7 @@ import org.rbrtwlz.edgedetection.ImageArray;
 
 public class GaussianFilter extends SlidingWindowFilter {
 
-  private int[][] k = {{1,2,1}, {2,4,2}, {1,2,1}};
+  private final int[][] k = {{1,2,1}, {2,4,2}, {1,2,1}};
   private Kernel kernel = new Kernel(k);
 
   public ImageArray applyFilter(ImageArray imageArray){

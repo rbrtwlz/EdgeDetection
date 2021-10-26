@@ -4,7 +4,7 @@ import org.rbrtwlz.edgedetection.ImageArray;
 
 public class ScharrFilter extends SlidingWindowFilter{
 
-  private int[][] k = {{47,162,47}, {0,0,0}, {-47,-162,-47}};
+  private final int[][] k = {{47,162,47}, {0,0,0}, {-47,-162,-47}};
   private Kernel kernel = new Kernel(k);
   private SobelFilter sobelFilter;
 

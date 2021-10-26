@@ -2,7 +2,7 @@ package org.rbrtwlz.edgedetection.filters;
 
 public class Kernel {
 
-  private int[][] kernelMatrix;
+  private final int[][] kernelMatrix;
 
   public int[][] getKernelMatrix(){ return this.kernelMatrix; }
   
