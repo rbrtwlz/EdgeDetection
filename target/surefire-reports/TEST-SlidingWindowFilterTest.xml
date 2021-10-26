@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="SlidingWindowFilterTest" time="0.006" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="SlidingWindowFilterTest" time="0.009" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="SlidingWindowFilterTest" name="testArray2dSlice" time="0.005"/>
-  <testcase classname="SlidingWindowFilterTest" name="testArrayWeightedSum" time="0.001"/>
-  <testcase classname="SlidingWindowFilterTest" name="testApplyKernel" time="0"/>
+  <testcase classname="SlidingWindowFilterTest" name="testArray2dSlice" time="0.007"/>
+  <testcase classname="SlidingWindowFilterTest" name="testArrayWeightedSum" time="0"/>
+  <testcase classname="SlidingWindowFilterTest" name="testApplyKernel" time="0.002"/>
 </testsuite>

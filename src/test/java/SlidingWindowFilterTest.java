@@ -31,20 +31,20 @@ public class SlidingWindowFilterTest extends SlidingWindowFilter {
     @Test
     public void testApplyKernel(){
         int[][] k = {{0,0,0},{1,1,1},{0,0,0}};
-        int[][] pa_1c = {{1,2,3,4,5},
-                         {2,3,4,5,6},
-                         {3,4,5,6,7},
-                         {4,5,6,7,8},
-                         {5,6,7,8,9}};
-        int [][][] pa = {pa_1c, pa_1c, pa_1c};
-        int[][] res_1c = this.applyKernel(pa, new Kernel(k))[0];
-        Assert.assertEquals("result width not correct", 3, res_1c[0].length);
-        Assert.assertEquals("result height not correct", 3, res_1c.length);
+        int[][] pa1C = {{1,2,3,4,5},
+                        {2,3,4,5,6},
+                        {3,4,5,6,7},
+                        {4,5,6,7,8},
+                        {5,6,7,8,9}};
+        int [][][] pa = {pa1C, pa1C, pa1C};
+        int[][] res1C = this.applyKernel(pa, new Kernel(k))[0];
+        Assert.assertEquals("result width not correct", 3, res1C[0].length);
+        Assert.assertEquals("result height not correct", 3, res1C.length);
         int[][] expected = {{9,12,15},
                             {12,15,18},
                             {15,18,21}};
-        for(int i=0; i<res_1c.length; i++){
-            Assert.assertArrayEquals("result applying kernel not correct", res_1c[i], expected[i]);
+        for(int i=0; i<res1C.length; i++){
+            Assert.assertArrayEquals("result applying kernel not correct", res1C[i], expected[i]);
         }
     }
 
