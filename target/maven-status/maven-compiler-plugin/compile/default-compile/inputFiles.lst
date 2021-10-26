@@ -1,0 +1,14 @@
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/filters/Filter.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/filters/GaussianFilter.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/ImageWriter.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/ImageArray.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/filters/SlidingWindowFilter.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/ImageReader.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/filters/Kernel.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/Client.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/filters/LaplaceFilter.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/filters/SobelFilter.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/filters/PrewittFilter.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/EdgeDetection.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/filters/BinaryThresholdFilter.java
+/home/user/IdeaProjects/EdgeDetection/src/main/java/org/rbrtwlz/edgedetection/filters/ScharrFilter.java
